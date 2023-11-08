@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-image: url('https://img.freepik.com/premium-photo/there-is-dark-picture-mountain-lake-with-boat-it-generative-ai_900814-4276.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.25);
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  .temperature-icon{
+    font-size: 45px;
+    color: #fff;
+  }
+
+  h1{
+    color: white;
+    letter-spacing: 1.4px;
+  }
+
+  .unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  input{
+    flex:5;
+    height: 60px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .icon{
+    flex:1;
+    height:60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background:#FF4D4D;
+    color: white;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .button-container{
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .button-container button{
+    border: none;
+    outline: none;
+    padding: 10px 30px ;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.15s;
+  }
+
+  .button-container button:hover{
+    background:rgba(0,0,0,.15);
+    color: white;
+    border: 1px solid white;
+    padding: 9px 30px;
+  }
+
+  @media only screen and (max-width:600px){
+    .title{
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+    }
+  }
